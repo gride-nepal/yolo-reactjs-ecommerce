@@ -7,6 +7,7 @@ import Section, { SectionTitle, SectionBody } from '../components/Section'
 import PolicyCard from '../components/PolicyCard'
 import Grid from '../components/Grid'
 import ProductCard from '../components/ProductCard'
+import CategoryCard from '../components/CategoryCard'
 
 import heroSliderData from '../assets/fake-data/hero-slider'
 import policy from '../assets/fake-data/policy'
@@ -52,7 +53,7 @@ const Home = () => {
             {/* best selling section */}
             <Section>
                 <SectionTitle>
-                    top sản phẩm bán chạy trong tuần
+                Browse a Popular Category
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -63,7 +64,7 @@ const Home = () => {
                     >
                         {
                             productData.getProducts(4).map((item, index) => (
-                                <ProductCard
+                                <CategoryCard
                                     key={index}
                                     img01={item.image01}
                                     img02={item.image02}

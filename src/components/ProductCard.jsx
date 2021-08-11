@@ -29,7 +29,7 @@ const ProductCard = props => {
                     icon="bx bx-cart"
                     animate={true}
                 >
-                    chọn mua
+                    Add to Bag
                 </Button>
             </div>
         </div>

@@ -5,19 +5,19 @@ import logo from '../assets/images/Logo-2.png'
 
 const mainNav = [
     {
-        display: "Trang chủ",
+        display: "Home",
         path: "/"
     },
     {
-        display: "Sản phẩm",
+        display: "Catalog",
         path: "/catalog"
     },
     {
-        display: "Phụ kiện",
+        display: "Accessories",
         path: "/accessories"
     },
     {
-        display: "Liên hệ",
+        display: "Contact",
         path: "/contact"
     }
 ]
