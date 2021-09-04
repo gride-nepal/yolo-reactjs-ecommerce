@@ -9,21 +9,29 @@ const mainNav = [
         path: "/"
     },
     {
-        display: "Catalog",
-        path: "/catalog"
+        display: "Restaurant",
+        path: "/restaurants"
     },
     {
-        display: "Accessories",
-        path: "/accessories"
+        display: "Grocery",
+        path: "/kirana"
     },
     {
-        display: "Contact",
-        path: "/contact"
+        display: "Liquor",
+        path: "/liquors"
+    },
+    {
+        display: "Pharmacy",
+        path: "/pharmacy"
+    },
+    {
+        display: "Bookstore",
+        path: "/bookstore"
     }
 ]
 
 const Header = () => {
-
+    
     const { pathname } = useLocation()
     const activeNav = mainNav.findIndex(e => e.path === pathname)
 

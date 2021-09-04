@@ -6,7 +6,7 @@ const policy = [
     },
     {
         name: "Delivered Fast",
-        description: "From our micro-fulfillment center to your door means that you get your order in just 30 minutes*. We're open late to bring you what you need.",
+        description: "From our local partners to your door means that you get your order in just 30 minutes*. We're open 24/7 to bring you what you need.",
         icon: "bx bx-credit-card"
     },
     {

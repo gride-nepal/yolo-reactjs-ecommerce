@@ -6,8 +6,14 @@ import { Link } from 'react-router-dom'
 import Button from './Button'
 
 import numberWithCommas from '../utils/numberWithCommas'
+import { useSocketIO } from '../contexts/socketio/SocketIOContext'
 
 const ProductCard = props => {
+    const {message,sendMessageNow} = useSocketIO();
+
+ if(message){
+     console.log(message);
+ }
     return (
         <div className="product-card">
             <Link to={`/catalog/${props.slug}`}>
@@ -24,12 +30,13 @@ const ProductCard = props => {
                 </div>
             </Link>
             <div className="product-card__btn">
-                <Button
+                <Button onClick={() => sendMessageNow()}
                     size="sm"    
                     icon="bx bx-cart"
                     animate={true}
                 >
                     Add to Bag
+                  
                 </Button>
             </div>
         </div>

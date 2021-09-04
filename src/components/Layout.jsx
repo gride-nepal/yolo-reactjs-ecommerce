@@ -4,11 +4,16 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import Header from './Header'
 import Footer from './Footer'
-
+import { Provider } from "react-redux";
+import store from "../redux/store/createStore";
+import SocketIOContextProvider from '../contexts/socketio/SocketIOContext';
 import Routes from '../routes/Routes'
 
 const Layout = () => {
     return (
+
+    <Provider store={store}>
+        <SocketIOContextProvider>
         <BrowserRouter>
             <Route render={props => (
                 <div>
@@ -22,6 +27,8 @@ const Layout = () => {
                 </div>
             )}/>
         </BrowserRouter>
+        </SocketIOContextProvider>
+        </Provider>
     )
 }
 

@@ -51,7 +51,7 @@ const HeroSlider = props => {
                         </div>
                         <div className="hero-slider__control__item">
                             <div className="index">
-                                {activeSlide + 1}/{data.length}
+                                {/* {activeSlide + 1}/{data.length} */}
                             </div>
                         </div>
                         <div className="hero-slider__control__item" onClick={nextSlide}>
@@ -87,7 +87,7 @@ const HeroSliderItem = props => (
                         icon="bx bx-cart"
                         animate={true}
                     >
-                        xem chi tiết
+                        Order Now
                     </Button>
                 </Link>
             </div>
